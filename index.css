@@ -16,7 +16,7 @@ body {
 
     width: 100%;
 
-    margin-top: -130px;
+    margin-top: -160px;
     padding: 0px;
     justify-content: space-between;
     display: flex;
@@ -452,147 +452,450 @@ body {
     margin: 5px 3px;
 }
 
-@media only screen and (max-width:1140px) {
-    body {
-        width: 9.0%;
+
+/* ============================================================
+   BURGER ACTIVE STATE — animated X icon
+   ============================================================ */
+.burger .line {
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger.active .line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.burger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active .line:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+
+/* ============================================================
+   MEDIA QUERIES — RESPONSIVE DESIGN
+   ============================================================ */
+
+/* ---------- Large Tablets & Small Laptops (max-width: 1024px) ---------- */
+@media (max-width: 1024px) {
+
+    .card {
+        width: 90%;
     }
 
-    .heading {
+    .service {
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+
+    .service img {
+        width: 280px;
+        margin-bottom: 120px;
+    }
+
+    .as3 {
+        width: 279px;
+    }
+
+    .p {
+        width: 280px;
+    }
+
+    .t1 {
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+
+    .detail {
+        width: 90%;
+        padding-top: 60px;
+        margin-left: 20px;
+        padding-left: 15px;
+    }
+
+    #journey-tabular {
+        flex-wrap: wrap;
+    }
+
+    #values {
+        flex-wrap: wrap;
+    }
+
+    #partnership,
+    #integrity,
+    #passion,
+    #excellence {
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    #partner {
+        margin: 30px;
+    }
+
+    #m1 {
         flex-direction: column;
-        transition: all 0.7s ease-out;
-        height: 377px;
+    }
+
+    #footer {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 30px 10px;
+    }
+
+    .lse {
+        margin-top: 30px;
+        font-size: x-large;
+    }
+}
+
+
+/* ---------- Tablets (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+
+    /* Navbar — show burger, hide links */
+    .heading {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    /* Hero image — JS sets margin-top dynamically,
+       but this is a safe fallback */
+    .mp1 {
+        margin-top: 0 !important;
+        height: auto;
+    }
+
+    .heading ul {
+        display: none;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        background-color: #1E3A8A;
+        list-style: none;
+    }
+
+    /* JS adds .open to show the menu */
+    .heading ul.open {
+        display: flex;
+    }
+
+    .heading ul li {
+        display: block;
+        padding: 15px 20px;
+        margin-top: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .burger {
         display: block;
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: auto 15px auto auto;
+        align-self: center;
     }
 
-    .line {
-        background-color: black;
+    /* Dropdown on mobile — static positioning */
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        min-width: 100%;
+        background-color: #162d6e;
     }
 
-    .h-nav-resp {
-        height: 72px;
+    li.dropdown {
+        display: block;
     }
 
-    .v-class-resp {
-        opacity: 0;
+    /* Journey section */
+    #journey {
+        width: 100%;
+        padding-top: 30px;
     }
 
-    .mp {
-        flex-direction: column;
-        width: 111.5%;
+    #journey img {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
-    .tag {
-        margin-left: -50px;
-    }
-
-    .left {
-        margin-left: 500%;
-    }
-
-    #contain {
+    #journey-tabular {
         flex-direction: column;
         align-items: center;
+        padding-top: 20px;
     }
 
-    .c1 {
-        margin-left: 50px;
-        align-self: center;
+    /* Cards */
+    .card {
+        width: 95%;
+        margin: 10px auto;
     }
 
-    .c2 {
-        margin-left: 50px;
-        align-self: center;
-    }
-
-    .c3 {
-        align-self: center;
-        margin-left: 50px;
-    }
-
-    #our {
+    /* Services */
+    .service {
+        flex-direction: column;
         align-items: center;
+        margin-top: 40px;
+    }
+
+    .service img {
+        width: 90%;
+        margin-bottom: 0;
     }
 
     .ad {
-        align-items: center;
-        margin-left: 50px;
-        margin-top: 50px;
-    }
-
-    .ad1 {
-        align-items: center;
-        margin-left: 50px;
-        margin-top: 50px;
-    }
-
-    .as {
-        align-items: center;
-        margin-left: -10px;
-    }
-
-    .as2 {
-        align-items: center;
-        margin-left: -20px;
-        width: 373px;
-    }
-
-    .p {
-        align-items: center;
-        margin-left: -10px;
-    }
-
-    .rm {
-        align-items: center;
-        margin-left: 60px;
+        width: 90%;
+        margin: 0 auto 30px;
     }
 
     .as3 {
-        margin-left: 20px;
+        width: 90%;
+        margin-top: 0;
     }
 
-    .p1 {
-        align-items: center;
+    .p {
+        width: 90%;
     }
 
-    .service {
-        flex-direction: column;
-        margin-top: -20px;
-        align-items: center;
-    }
-
-    .team {
-        align-items: center;
-        margin-left: 10px;
-    }
-
+    /* Team */
     .t1 {
         flex-direction: column;
         align-items: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
     }
 
-    .cap {
-        align-items: center;
+    .t1 img {
+        margin: 20px auto;
     }
 
     .ac {
-        margin-left: 60px;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    /* About us */
+    #aboutus {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    #values {
+        flex-direction: column;
         align-items: center;
     }
 
+    #partnership,
+    #integrity,
+    #passion,
+    #excellence {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #assurance {
+        margin: 20px 10px;
+    }
+
+    #partner {
+        margin: 20px;
+    }
+
+    /* Partner / detail section */
+    #m1 {
+        flex-direction: column;
+    }
+
+    .detail {
+        width: 90%;
+        margin-left: 0;
+        padding-left: 15px;
+        padding-top: 30px;
+    }
+
+    /* Footer */
     #footer {
         flex-direction: column;
         height: auto;
-        width: 1110%;
+        align-items: flex-start;
+        padding: 20px;
+    }
 
+    .lse {
+        margin-top: 20px;
+        font-size: large;
+        margin-left: 10px;
+    }
+
+    .line1 {
+        margin-left: 10px;
+    }
+
+    .cus {
+        margin-right: 0;
     }
 
     .copy {
-        width: 1100%;
-        line-height: 25px;
-        height: min-content;
-        padding: 2px;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .tag {
+        margin-left: 15px;
+    }
+}
+
+
+/* ---------- Mobile Phones (max-width: 480px) ---------- */
+@media (max-width: 480px) {
+
+    .heading ul li {
+        font-size: 13px;
+        padding: 12px 15px;
+    }
+
+    .ch {
+        font-size: 1.2rem;
+    }
+
+    .cpa {
+        margin-left: 10px;
+        font-size: 0.95rem;
+    }
+
+    .card {
+        width: 95%;
+        margin: 8px auto;
+    }
+
+    .service img {
+        width: 95%;
+    }
+
+    .as3 {
+        width: 95%;
+    }
+
+    .p {
+        width: 95%;
+    }
+
+    .rm {
+        font-size: large;
+    }
+
+    .cam {
+        font-size: large;
+    }
+
+    .ac {
+        width: 90%;
+    }
+
+    .cap {
+        font-size: large;
+    }
+
+    #aboutus {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #partnership,
+    #integrity,
+    #passion,
+    #excellence {
+        width: 95%;
+        margin: 8px auto;
+    }
+
+    #assurance {
+        margin: 10px 5px;
+        padding: 15px;
+    }
+
+    #partner {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .detail {
+        width: 95%;
+        padding-left: 10px;
+        padding-top: 20px;
+        margin-left: 0;
+    }
+
+    #footer {
+        padding: 15px 10px;
+    }
+
+    #footer li {
+        font-size: 0.9rem;
+    }
+
+    .lse {
+        font-size: medium;
+        margin-left: 5px;
+    }
+
+    .cop {
+        font-size: 0.85rem;
+        padding: 0 10px;
+    }
+
+    .burger {
+        margin-right: 10px;
+    }
+
+    .tag {
+        margin-left: 8px;
+    }
+
+    .t1 img {
+        width: 80%;
+        max-width: 250px;
+    }
+}
+
+
+/* ---------- Very Small Phones (max-width: 360px) ---------- */
+@media (max-width: 360px) {
+
+    .heading ul li {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    .card {
+        width: 98%;
+    }
+
+    .service img,
+    .as3,
+    .p {
+        width: 98%;
+    }
+
+    #partnership,
+    #integrity,
+    #passion,
+    #excellence {
+        width: 98%;
+        margin: 6px auto;
+    }
+
+    .detail {
+        width: 98%;
+        padding-left: 8px;
     }
 }
