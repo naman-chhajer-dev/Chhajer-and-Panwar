@@ -106,7 +106,7 @@ body {
     /* border: 2px solid black; */
     height: 350px;
     background-color: black;
-    margin-top: 120px;
+    /* margin-top: 20px; */
     width: 100%;
 }
 
@@ -187,8 +187,8 @@ body {
 
 
 .as3 {
-    width: 349px;
-
+    /* width: 350px; */
+    /* text-align: center; */
     color: goldenrod;
     margin-top: -125px;
 }
@@ -205,9 +205,10 @@ body {
     background-color: #1D4ED8;
 }
 
-.p {
+.servicep {
     width: 350px;
     color: black;
+    padding: 20px;
 }
 
 #our {
@@ -242,6 +243,7 @@ body {
     position: relative;
     display: inline-block;
     margin: 0 35px;
+    border: 2px solid black;
 }
 
 .ac {
@@ -250,14 +252,19 @@ body {
     background-color: #FFFFFF;
     color: #1F2937;
     height: auto;
+    width: 400px;
     text-align: center;
+
     padding-bottom: 20px;
 
 }
 
 
 .m1 {
-    border-radius: 250px;
+    border-radius: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: black;
 }
 
 .cap {
@@ -373,9 +380,43 @@ body {
     border-radius:15px;
     margin-left:40px;
     padding-left: 30px;
-    padding-top:100px;
+    padding-top:50px;
     width:1200px;
     
+}
+.p{
+    /* border-radius: 100%; */
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: black;
+    height: 250px;
+}
+
+#industries{
+    border:2px solid #E5E7EB;
+    border-radius: 15px;
+    margin:40px;
+    padding:20px;
+
+}
+.ind{
+    text-align: center;
+    color: #1E3A8A;
+}
+.ind1{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.ind2{
+    border: 2px solid #E5E7EB;
+    border-radius: 15px;
+    padding: 20px;
+}
+.ind4{
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
 }
 #footer {
     height: 300px;
@@ -479,6 +520,143 @@ body {
    MEDIA QUERIES — RESPONSIVE DESIGN
    ============================================================ */
 
+/* ---------- Extra Large Desktops (min-width: 1920px) ---------- */
+@media (min-width: 1920px) {
+
+    .card {
+        width: 1000px;
+    }
+
+    .service img {
+        width: 420px;
+    }
+
+    .servicep {
+        width: 420px;
+    }
+
+    .as3 {
+        width: 420px;
+    }
+
+    .detail {
+        width: 1400px;
+    }
+
+    .heading ul li {
+        font-size: 17px;
+        padding: 25px 28px;
+    }
+
+    .ch {
+        font-size: 2rem;
+    }
+
+    .cpa {
+        font-size: 1.1rem;
+    }
+
+    .ac {
+        width: 500px;
+    }
+
+    #footer {
+        height: 350px;
+    }
+
+    .lse {
+        margin-top: 300px;
+        font-size: 3rem;
+    }
+
+    #industries {
+        margin: 60px;
+        padding: 30px;
+    }
+
+    .ind4 {
+        font-size: x-large;
+    }
+
+    .ind2 {
+        padding: 30px;
+    }
+}
+
+
+/* ---------- Large Desktops (min-width: 1440px) ---------- */
+@media (min-width: 1440px) and (max-width: 1919px) {
+
+    .card {
+        width: 900px;
+    }
+
+    .service img {
+        width: 380px;
+    }
+
+    .servicep {
+        width: 380px;
+    }
+
+    .as3 {
+        width: 380px;
+    }
+
+    .detail {
+        width: 1300px;
+    }
+
+    .heading ul li {
+        font-size: 16px;
+        padding: 24px 26px;
+    }
+
+    .ac {
+        width: 450px;
+    }
+
+    #footer {
+        height: 320px;
+    }
+
+    .lse {
+        margin-top: 270px;
+    }
+
+    #industries {
+        margin: 50px;
+        padding: 25px;
+    }
+
+    .ind4 {
+        font-size: large;
+    }
+}
+
+
+/* ---------- Standard Desktops / Large Laptops (min-width: 1200px, max-width: 1439px) ---------- */
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+    .card {
+        width: 850px;
+    }
+
+    .detail {
+        width: 1100px;
+    }
+
+    .ac {
+        width: 420px;
+    }
+
+    #industries {
+        margin: 40px;
+        padding: 20px;
+    }
+}
+
+
 /* ---------- Large Tablets & Small Laptops (max-width: 1024px) ---------- */
 @media (max-width: 1024px) {
 
@@ -549,6 +727,72 @@ body {
     .lse {
         margin-top: 30px;
         font-size: x-large;
+    }
+
+    #industries {
+        margin: 25px;
+        padding: 15px;
+    }
+
+    .ind1 {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .ind2 {
+        flex: 1 1 45%;
+    }
+}
+
+
+/* ---------- Landscape Tablets & Large Phones (max-width: 900px) ---------- */
+@media (max-width: 900px) {
+
+    .card {
+        width: 92%;
+    }
+
+    .service img {
+        width: 260px;
+    }
+
+    .as3 {
+        width: 260px;
+    }
+
+    .p {
+        width: 260px;
+    }
+
+    .ac {
+        width: 320px;
+    }
+
+    #partnership,
+    #integrity,
+    #passion,
+    #excellence {
+        width: 85%;
+        margin: 12px auto;
+    }
+
+    .detail {
+        width: 92%;
+        margin-left: 10px;
+    }
+
+    #industries {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .ind1 {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .ind2 {
+        flex: 1 1 45%;
     }
 }
 
@@ -752,6 +996,120 @@ body {
     .tag {
         margin-left: 15px;
     }
+
+    #industries {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .ind1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ind2 {
+        width: 90%;
+        margin: 8px auto;
+    }
+
+    .ind4 {
+        font-size: medium;
+    }
+}
+
+
+/* ---------- Landscape Mobile Phones (max-width: 600px) ---------- */
+@media (max-width: 600px) {
+
+    .heading ul li {
+        font-size: 14px;
+        padding: 13px 18px;
+    }
+
+    .card {
+        width: 95%;
+        margin: 8px auto;
+    }
+
+    .service img {
+        width: 92%;
+    }
+
+    .as3 {
+        width: 92%;
+    }
+
+    .p {
+        width: 92%;
+    }
+
+    .ac {
+        width: 85%;
+    }
+
+    .ch {
+        font-size: 1.3rem;
+    }
+
+    .cpa {
+        font-size: 0.97rem;
+        margin-left: 12px;
+    }
+
+    #aboutus {
+        margin: 15px;
+        padding: 12px;
+    }
+
+    #partnership,
+    #integrity,
+    #passion,
+    #excellence {
+        width: 92%;
+        margin: 9px auto;
+    }
+
+    #partner {
+        margin: 15px;
+    }
+
+    .detail {
+        width: 92%;
+        padding-left: 12px;
+        padding-top: 25px;
+    }
+
+    #footer {
+        padding: 18px 12px;
+    }
+
+    .lse {
+        font-size: large;
+        margin-left: 8px;
+    }
+
+    .tag {
+        margin-left: 12px;
+    }
+
+    #industries {
+        margin: 12px;
+        padding: 12px;
+    }
+
+    .ind1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ind2 {
+        width: 92%;
+        margin: 7px auto;
+    }
+
+    .ind4 {
+        font-size: medium;
+    }
 }
 
 
@@ -865,6 +1223,25 @@ body {
         width: 80%;
         max-width: 250px;
     }
+
+    #industries {
+        margin: 10px;
+        padding: 12px;
+    }
+
+    .ind1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ind2 {
+        width: 95%;
+        margin: 6px auto;
+    }
+
+    .ind4 {
+        font-size: medium;
+    }
 }
 
 
@@ -897,5 +1274,141 @@ body {
     .detail {
         width: 98%;
         padding-left: 8px;
+    }
+
+    #industries {
+        margin: 8px;
+        padding: 10px;
+    }
+
+    .ind1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ind2 {
+        width: 98%;
+        margin: 5px auto;
+    }
+
+    .ind4 {
+        font-size: small;
+    }
+}
+
+
+/* ---------- Ultra Small Devices (max-width: 320px) ---------- */
+@media (max-width: 320px) {
+
+    .heading ul li {
+        font-size: 11px;
+        padding: 9px 10px;
+    }
+
+    .ch {
+        font-size: 1rem;
+    }
+
+    .cpa {
+        font-size: 0.88rem;
+        margin-left: 6px;
+    }
+
+    .card {
+        width: 99%;
+        margin: 5px auto;
+    }
+
+    .service img,
+    .as3,
+    .p {
+        width: 99%;
+    }
+
+    .ac {
+        width: 95%;
+    }
+
+    .cap {
+        font-size: medium;
+    }
+
+    .rm,
+    .cam {
+        font-size: medium;
+    }
+
+    #aboutus {
+        margin: 6px;
+        padding: 8px;
+    }
+
+    #partnership,
+    #integrity,
+    #passion,
+    #excellence {
+        width: 99%;
+        margin: 5px auto;
+    }
+
+    #assurance {
+        margin: 6px 3px;
+        padding: 10px;
+    }
+
+    #partner {
+        margin: 6px;
+        padding: 10px;
+    }
+
+    .detail {
+        width: 99%;
+        padding-left: 6px;
+        padding-top: 15px;
+    }
+
+    #footer {
+        padding: 10px 6px;
+    }
+
+    #footer li {
+        font-size: 0.82rem;
+    }
+
+    .lse {
+        font-size: small;
+        margin-left: 4px;
+    }
+
+    .cop {
+        font-size: 0.78rem;
+    }
+
+    .tag {
+        margin-left: 5px;
+    }
+
+    .t1 img {
+        width: 90%;
+        max-width: 200px;
+    }
+
+    .ind1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ind2 {
+        width: 95%;
+        margin: 5px auto;
+    }
+
+    #industries {
+        margin: 6px;
+        padding: 8px;
+    }
+
+    .ind4 {
+        font-size: x-small;
     }
 }
