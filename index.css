@@ -175,7 +175,7 @@ body {
 }
 
 .ad {
-    border: 2px solid #E5E7EB;
+    border: 5px solid #000;
     border-radius: 15px;
     background-color: #FFFFFF;
 
@@ -185,6 +185,9 @@ body {
     text-align: center;
 }
 
+.ad hr{
+    border: 2px solid ;
+}
 
 .as3 {
     /* width: 350px; */
@@ -196,14 +199,13 @@ body {
 .rm {
 
     font-size: x-large;
-    color: #FFFFFF;
-    background-color: #2563EB;
+    color: #1D4ED8;
+    font-weight: bold;
+    /* background-color: #2563EB; */
     text-decoration: none;
 }
 
-.rm:hover {
-    background-color: #1D4ED8;
-}
+
 
 .servicep {
     width: 350px;
@@ -240,14 +242,17 @@ body {
 
 .t1 img {
     margin-bottom: 180px;
+    top: 10px;
     position: relative;
     display: inline-block;
     margin: 0 35px;
     border: 2px solid black;
+    width: 30%;
+    height: 10%;
 }
 
 .ac {
-    border: 2px solid #E5E7EB;
+    border: 5px solid #000;
     border-radius: 15px;
     background-color: #FFFFFF;
     color: #1F2937;
@@ -258,13 +263,16 @@ body {
     padding-bottom: 20px;
 
 }
+.ac hr{
+    border: 2px solid;
+}
 
 
 .m1 {
     border-radius: 100%;
-    padding-left: 20px;
+    padding-left: 0px;
     padding-top: 20px;
-    background-color: black;
+    background-color: white;
 }
 
 .cap {
@@ -280,15 +288,15 @@ body {
 
 .cam {
     /* margin-left: 80px; */
-    font-size: x-large;
-    color: #0f294a;
+    font-size:x-large;
+    font-weight:bold;
     text-decoration: none;
-    background-color: #2563EB;
-    color: #FFFFFF;
+    /* background-color: #2563EB; */
+    color: #1D4ED8;
 }
 
 .cam {
-    background-color: #1D4ED8;
+    /* background-color: #1D4ED8; */
 }
 
 #aboutus{
@@ -297,6 +305,7 @@ body {
     margin:40px;
     padding: 20px;
     background-color: #FFFFFF;
+    
     
 }
 #aboutus h1{
@@ -386,10 +395,12 @@ body {
 }
 .p{
     /* border-radius: 100%; */
-    padding-left: 20px;
+    /* padding-left: 20px; */
     padding-top: 20px;
-    background-color: black;
-    height: 250px;
+    /* background-color: black; */
+    height: 200px;
+    width: 250px;
+    border: 2px solid black;
 }
 
 #industries{
